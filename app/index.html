@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Beautiful Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
 </head>
 <body>
 
-<div id="header"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div id="header" class="col-md-12">header</div>
+    </div>
 
-<div id="leftSideBar"></div>
-<div id="main"></div>
-<div id="rightSideBar"></div>
+    <div class="row">
+        <div id="left-sidebar" class="col-md-3">leftSideBar</div>
+        <div id="main" class="col-md-6">main</div>
+        <div id="right-sidebar" class="col-md-3">rightSideBar</div>
+    </div>
 
-<div id="footer"></div>
+    <div class="row">
+        <div id="footer" class="col-md-12">footer</div>
+    </div>
+</div>
 </body>
 </html>
